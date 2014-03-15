@@ -1,4 +1,4 @@
-if(Areas.find().count() == 0)
+if(Areas.find().count() == 0 && Crimes.find().count() != 0)
 {
 	var stations = Stations.find();
 	var areas = [];
