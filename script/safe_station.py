@@ -10,21 +10,21 @@ with open("crimes.json") as json_file:
 
     clean_data = []
 
-    crimes = {'2008': 0, '2009': 0, '2010': 0, '2011': 0,
-              '2012': 0, '2013': 0, '2014': 0}
-
     neighbourhoods = json_data['Neighbourhoods']
-    hoods = lat_long['lat_long']
 
     for n in neighbourhoods:
         name = n['Name']
         long = 0
         lat = 0
 
-        for h in hoods:
-            if h['name'] == name:
-                lat = h['lat']
-                long = h['lon']
+        crimes = {'2008': 0, '2009': 0, '2010': 0, '2011': 0,
+              '2012': 0, '2013': 0, '2014': 0}
+
+        for area in lat_long['lat_long']:
+
+            if area['name'] == name:
+                lat = area['lat']
+                long = area['lon']
                 break
 
         for c in n['CrimeSets']:
@@ -33,10 +33,9 @@ with open("crimes.json") as json_file:
 
             crimes[year] = crimes[year] + month_crimes
 
-
         clean_data.append({'Name': name,'Longitude': long, 'Latitude': lat, 'Crimes': crimes})
 
-
-    with open('clea_data.json', 'w') as outfile:
-        json.dump(clean_data, outfile)
-
+    f= open('clean_data.json','w')
+    newData = json.dumps(clean_data, sort_keys=True, indent=4)
+    f.write(newData)
+    f.close()
