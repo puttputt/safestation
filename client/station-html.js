@@ -19,13 +19,13 @@ Template.spooky.rendered = function() {
 }
 
 function html(name, address, price, count){
-	return '<div class="station"><div class="stationPrice">'+ price +'</div><div class="stationInfo"><div class="stationTitle">'+ name+'</div><div class="stationAddress">'+address+'</div></div><div class="stationRating">'+ ((count / 1532) * 100).toFixed(0) +'%</div></div>';
+	return '<div class="station"><div class="stationPrice">'+ price +'</div><div class="stationInfo"><div class="stationTitle">'+ name+'</div><div class="stationAddress">'+address+'</div></div><div class="stationRating">'+ (100- (count/1532) * 100).toFixed(0) +'%</div></div>';
 }
 
 Template.graph.rendered = function() {
 	Meteor.call('graphData', function(error, result) {
 		result.forEach(function(station) {
 
-		});
+		})
 	});
 }

@@ -36,7 +36,7 @@ Meteor.methods({
 			areas.forEach(function(area){
 				var station = Stations.findOne({_id: area.StationId});
 				var graph = [];
-				crime.Crimes.forEach(crime
+				console.log(crime.Crimes);
 				all.push({
 					"name": station.StationName,
 					"address": station.Address,

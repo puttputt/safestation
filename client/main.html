@@ -2,6 +2,7 @@
 <title>SafeStation - Slurpees Not Stabbings</title>
 <link rel="stylesheet" href="style.css" type="text/css" >
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
+
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 <script language="javascript" type="text/javascript" src="stylesheets/jquery.flot.js"></script>
 </head>
@@ -39,7 +40,28 @@
       
     </div>
   </div>
-  {{>graph}}
+  <div id="graphs">
+    graphz go here
+  </div>
+  <div id="footer">
+    <img src="images/gb.png"></img>
+    <img src="images/police.png"></img>
+    <script>
+      CoinWidgetCom.go({
+        /* make sure you update the wallet_address or you will not get your donations */
+        wallet_address: "DHoMaPHUFmtfvZYZcQ1Zxq8A3QpgKDpJ1F"
+        , currency: "dogecoin"
+        , counter: "amount"
+        , alignment: "bl"
+        , qrcode: true
+        , auto_show: false
+        , lbl_button: "Donate"
+        , lbl_address: "Tip Dogecoin to this Address:"
+        , lbl_amount: "DOGE"
+      });
+    </script>
+    Built by Jason Wist, Kyle Smyth & Landon Rohatensky
+  </div>
 </body>
 
 <template name="safe">
@@ -51,11 +73,5 @@
 <template name="spooky">
   <div id="spooky">
     
-  </div>
-</template>
-
-<template name="graph">
-  <div id="graphs">
-
   </div>
 </template>

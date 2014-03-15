@@ -110,3 +110,18 @@ h2 {
 	font-size: 50px;
 	float: right;
 }
+
+#graphs{
+	background-color: #eaeae5;
+}
+
+#footer {
+	height: 50px;
+	background-color: #444;
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+}
