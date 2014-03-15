@@ -1,15 +1,59 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-	<title>SafeStation</title>
-
-	<script type="text/javascript">
-	</script>
+<title>SafeStation - Slurpees Not Stabbings</title>
+<link rel="stylesheet" href="style.css" type="text/css" >
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 </head>
-	
 <body>
-	{{>main }}
-</body>
+  <div id="header">
+    <img src="images/safestationlogo.png"></img>
+  </div>
+  <div id="whatdo">
+    <div id="whatdoleft">
+      <div class="whatdotext">
+        SafeStation helps users get a slurpee and gas in an unfamiliar area without getting stabbed. SafeStation helps users decide whether it's worth saving a few bucks going to the 7/11 down the street.
+      </div>
+      <div class="whatdoimage">
+        <img src="images/slurp.png">
+      </div>
+    </div>
+    <div id="whatdoright">
+      <div class="whatdotext">
+        By providing rankings that take into historical crime rates committed in the area, we are able to scientifically predict the chances of getting stabbed while getting a slurpee.
+      </div>
+      <div class="whatdoimage">
+        <img src="images/stab.png">
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="leftcontent">
+      <h2>Safest Gas Stations In Regina</h2>
 
-<template name="main">
-	<h1>TEST FUCK YOU</h1>
-	{{test}}
-</template>
+      <div class="station">
+        <div class="stationPrice">$123.9</div>
+        <div class="stationInfo">
+          <div class="stationTitle">Esso</div>
+          <div class="stationAddress">1667 Victoria</div>
+        </div>
+        <div class="stationRating">13%</div>
+      </div>
+    </div>
+    <div id="rightcontent">
+      <h2>Spookiest Gas Stations In Regina</h2>
+
+      <div class="station">
+        <div class="stationPrice">$117.9</div>
+        <div class="stationInfo">
+          <div class="stationTitle">Regina Cabs</div>
+          <div class="stationAddress">3405 Saskatchewan Dr & Montague</div>
+        </div>
+        <div class="stationRating">100%</div>
+      </div>
+    </div>
+  </div>
+</body>
