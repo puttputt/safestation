@@ -22,10 +22,13 @@ function html(name, address, price, count){
 	return '<div class="station"><div class="stationPrice">'+ price +'</div><div class="stationInfo"><div class="stationTitle">'+ name+'</div><div class="stationAddress">'+address+'</div></div><div class="stationRating">'+ (100- (count/1532) * 100).toFixed(0) +'%</div></div>';
 }
 
-Template.graph.rendered = function() {
+/*
+Template.graphs.rendered = function() {
 	Meteor.call('graphData', function(error, result) {
-		result.forEach(function(station) {
 
-		})
+	console.log(result[0].data);
+	$.plot("#placeholder", [result[0].data], {
+				xaxis: { mode: "time" }
+			});
 	});
-}
+}*/

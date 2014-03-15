@@ -24,7 +24,7 @@ Meteor.methods({
 				return a.count-b.count;
 			else
 				return b.count-a.count;
-		}).slice(0,10);
+		}).slice(0,15);
 	},
 	graphData: function()
 	{
@@ -35,17 +35,25 @@ Meteor.methods({
 			var areas = Areas.find({AreaId: crime._id});
 			areas.forEach(function(area){
 				var station = Stations.findOne({_id: area.StationId});
-				var graph = [];
-				console.log(crime.Crimes);
+				var graph = [
+					[new Date('2008').getTime(),crime.Crimes["2008"]],
+					[new Date('2009').getTime(),crime.Crimes["2009"]],
+					[new Date('2010').getTime(),crime.Crimes["2010"]],
+					[new Date('2011').getTime(),crime.Crimes["2011"]],
+					[new Date('2012').getTime(),crime.Crimes["2012"]],
+					[new Date('2013').getTime(),crime.Crimes["2013"]],
+					]
+				console.log(graph);
 				all.push({
 					"name": station.StationName,
 					"address": station.Address,
 					"price": station.Price,
 					"area": area.Area,
-					"data": crime.Crimes
+					"data": graph
 				})
 			})
 			
 		});
+		return all;
 	}
 })

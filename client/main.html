@@ -4,7 +4,7 @@
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
 <script src="http://cdn.bitmindo.com/dogecoin.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-<script language="javascript" type="text/javascript" src="stylesheets/jquery.flot.js"></script>
+
 </head>
 <body>
   <div id="header">
@@ -41,7 +41,7 @@
     </div>
   </div>
   <div id="graphs">
-    graphz go here
+    {{>graphs}}
   </div>
   <div id="footer">
     <img src="images/gb.png"></img>
@@ -74,4 +74,14 @@
   <div id="spooky">
     
   </div>
+</template>
+
+<template name="graphs">
+  <!--<div id="graphs">
+    <div class="demo-container"><div id="placeholder" class="demo-placeholder"></div></div>
+  </div>-->
+</template>
+
+<template name="graph">
+  
 </template>
