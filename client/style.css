@@ -1,0 +1,112 @@
+body {
+	margin: 0;
+	background-color: #f2f1ed;
+}
+
+#header {
+	text-align: center;
+	background-image: url("images/headerbg.png");
+}
+
+#whatdo {
+	height: 250px;
+	width: 100%;
+	color: #fff;
+	font: italic 24px 'Source Sans Pro', sans-serif;
+	font-weight: 100;
+	font-variant:small-caps;
+}
+
+#whatdoleft {
+	background-color: #b44140;
+	float: left;
+	height: 250px;
+	width: 50%;
+	border-bottom-style: solid;
+	border-bottom-color: #8e3332;
+}
+
+#whatdoright {
+	background-color: #c44f4e;
+	float: left;
+	height: 250px;
+	width: 50%;
+	border-bottom-style: solid;
+	border-bottom-color: #b44140;
+}
+
+.whatdotext {
+	width: 380px;
+	margin: 30px 0px 0 20px;
+	float:  left;
+}
+
+.whatdoimage {
+	float: left;
+	margin: 30px 0 0 0;
+}
+
+#leftcontent {
+	width: 50%;
+	float: left;
+}
+
+#rightcontent {
+	width: 50%;
+	float: left;
+}
+
+h2 {
+	text-align: center;
+	font: italic 50px 'Source Sans Pro', sans-serif;
+	font-weight: 100;
+	font-variant:small-caps;
+	color: #c44f4e;
+}
+
+#content {
+	background-color: #f2f1ed;
+}
+
+.station {
+	width: 480px;
+	background-color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 5px 10px 10px 10px;
+	border: 1px solid #e4e4e4;
+	margin: 0 0 30px 50px;
+	float: left;
+}
+
+.stationPrice {
+	font-size: 40px;
+	color: #48c268;
+	float: left;
+	margin: 8px 20px 0 5px;
+}
+
+.stationInfo {
+	float: left;
+	width: 225px;
+}
+
+.stationTitle {
+	font-size: 32px;
+	float: left;
+	color: #474747;
+	width: 300px;
+}
+
+.stationAddress {
+	font-size: 18px;
+	font-style: italic;
+	float: left;
+	color: #474747;
+	width: 225px;
+}
+
+.stationRating {
+	color: #c44f4e;
+	font-size: 50px;
+	float: right;
+}
