@@ -127,6 +127,15 @@ h2 {
 	padding-top: 10px;
 }
 
+#stabby {
+}
+
+#stab2 {
+	position: absolute;
+	margin-top: -185px;
+	margin-left: 20px;
+}
+
 .demo-container {
 	float: left;
 	box-sizing: border-box;
