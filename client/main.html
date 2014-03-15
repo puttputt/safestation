@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="style.css" type="text/css" >
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<script language="javascript" type="text/javascript" src="stylesheets/jquery.flot.js"></script>
 </head>
 <body>
   <div id="header">
@@ -38,6 +39,7 @@
       
     </div>
   </div>
+  {{>graph}}
 </body>
 
 <template name="safe">
@@ -49,5 +51,11 @@
 <template name="spooky">
   <div id="spooky">
     
+  </div>
+</template>
+
+<template name="graph">
+  <div id="graphs">
+
   </div>
 </template>

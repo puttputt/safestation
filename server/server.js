@@ -25,5 +25,27 @@ Meteor.methods({
 			else
 				return b.count-a.count;
 		}).slice(0,10);
+	},
+	graphData: function()
+	{
+		var crimes = Crimes.find();
+
+		var all = [];
+		crimes.forEach(function(crime) {
+			var areas = Areas.find({AreaId: crime._id});
+			areas.forEach(function(area){
+				var station = Stations.findOne({_id: area.StationId});
+				var graph = [];
+				crime.Crimes.forEach(crime
+				all.push({
+					"name": station.StationName,
+					"address": station.Address,
+					"price": station.Price,
+					"area": area.Area,
+					"data": crime.Crimes
+				})
+			})
+			
+		});
 	}
 })
