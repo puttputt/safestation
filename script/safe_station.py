@@ -13,12 +13,17 @@ with open("crimes.json") as json_file:
     neighbourhoods = json_data['Neighbourhoods']
 
     for n in neighbourhoods:
+
+        if n['Name'] == 'Total':
+            break
+
         name = n['Name']
         long = 0
         lat = 0
 
         crimes = {'2008': 0, '2009': 0, '2010': 0, '2011': 0,
               '2012': 0, '2013': 0, '2014': 0}
+
 
         for area in lat_long['lat_long']:
 
