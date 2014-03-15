@@ -24,6 +24,6 @@ Meteor.methods({
 				return a.count-b.count;
 			else
 				return b.count-a.count;
-		});
+		}).slice(0,10);
 	}
 })
