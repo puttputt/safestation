@@ -116,7 +116,7 @@ h2 {
 }
 
 #footer {
-	height: 80px;
+	height: 100px;
 	background-color: #444;
 	width: 100%;
 	float: left;
@@ -126,7 +126,6 @@ h2 {
 	font-family: 'Source Sans Pro', sans-serif;
 	padding-top: 10px;
 }
-
 #stabby {
 }
 
